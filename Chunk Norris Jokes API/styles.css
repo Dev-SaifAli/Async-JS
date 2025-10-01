@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: monospace;
+}
+
+h2 {
+  margin: 25px 0px;
+  text-align: center;
+  color: limegreen;
+  font-size: 3rem;
+}
+
+#loadingJoke {
+  color: limegreen;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#loadingJokeBtn {
+  text-transform: uppercase;
+  padding: 10px;
+  display: block;
+  margin: 35px auto; /* Centers horizontally */
+  background-color: transparent;
+  border: 1px solid white;
+  color: limegreen;
+}
+
+img {
+  display: block;
+  margin: 120px auto; /* Centers horizontally */
+  height: 250px;
+}
