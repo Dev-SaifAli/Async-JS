@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/Images/image.png);
+  background-size: cover;
+
+  /* min-height: 100vh; */
+}
+h1 {
+  color: #121212;
+  margin-top: 20px;
+  text-align: center;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+#app {
+  position: relative;
+  /* color: #1f1f1f; */
+  color: #a4b1c2;
+  width: 420px;
+  height: 400px;
+  background-color: rgb(0, 24, 44);
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 20px auto;
+  box-shadow: 0px 4px px #1f1f1f;
+
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 1rem;
+}
+
+#searchBarInput {
+  color: white;
+  width: 300px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 2px;
+  outline: none;
+}
+
+#searchIcon {
+  padding: 2px;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: white;
+}
+#date {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+#city {
+  font-size: 2rem;
+  margin: 20px;
+}
+
+#description {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+#tempImg {
+  margin-top: 20px;
+}
+
+#temp {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+#extra-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 3rem;
+}
+h5 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+p {
+  font-size: 1rem;
+}
+.fade-in {
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+#loader {
+  color: red;
+}
+
+.page-container {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+/* when we have both classes to the same element. this is 
+different .page-container .show and .page-container.show */
+
+.page-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}

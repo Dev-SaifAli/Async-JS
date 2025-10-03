@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body>
+    <h1> WEATHER</h1>
+    <div id="app" class="page-container">
+        <!-- Search bar -->
+        <div id="searchBar">
+            <input type="text" id="searchBarInput" placeholder="Search by City" autocomplete="off" autofocus>
+            <button id="searchIcon"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div id="loader" style="display:none;">Loading...</div>
+
+
+        <div class="fade-in" id="weatherResult">
+
+            <!-- Date & City -->
+
+            <div id="info">
+                <div id="date"></div>
+                <h3 id="city"></h3>
+            </div>
+
+            <!-- Weather Image -->
+            <div id="tempImg"></div>
+
+
+            <!-- Description -->
+            <div id="description"></div>
+
+            <!-- Temp -->
+            <div id="temp">
+
+            </div>
+
+
+
+            <!-- Extra Info -->
+            <div id="extra-info">
+                <div class="col">
+                    <div class="info">
+                        <h5>Highs</h5>
+                        <p id="tempMax"></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <h5>Lows</h5>
+                        <p id="tempMin"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
