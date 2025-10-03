@@ -1,14 +1,23 @@
+/* ...existing styles... */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body,
+html {
   background-image: url(/Images/image.png);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  /* min-height: 100vh; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   color: #121212;
@@ -122,4 +131,52 @@ different .page-container .show and .page-container.show */
 .page-container.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  #app {
+    width: 95vw;
+    height: auto;
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+    margin: 10px auto;
+  }
+
+  #searchBarInput {
+    width: 70vw;
+    font-size: 1rem;
+  }
+
+  #city {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+
+  #temp {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  #extra-info {
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    position: static;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  #app {
+    width: 100vw;
+    padding: 0.5rem 0.2rem;
+  }
+  #searchBarInput {
+    width: 90vw;
+    font-size: 0.9rem;
+  }
 }
